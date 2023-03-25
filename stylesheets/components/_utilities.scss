@@ -1,0 +1,40 @@
+.banner-img{
+    top: 30px;
+    bottom:30px;
+    left: 30px;
+    right: 30px;
+    background-image: url(https://images.unsplash.com/photo-1675104180563-5971716d71e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2231&q=80);
+}
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-dark-gradient {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.9));
+}
+
+.btn-outline-primary{
+    &:hover{
+        color: $white;
+    }
+}
+
+.btn-outline-light{
+    &:hover{
+        color: $primary2;
+    }
+}
+
+.link-white{
+    a{
+        color: $white;
+        text-decoration: none; 
+        cursor: pointer;
+        &:hover{
+            color: $primary2;
+        }
+    }
+}

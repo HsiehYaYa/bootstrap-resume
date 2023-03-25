@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap課程作業</title>
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- 這裡是header -->
+    <header class="mb-5 min-vh-100 position-relative">
+        <div class="deco-box1 position-absolute top-0 start-0"></div>
+        <div class="deco-box2 position-absolute bottom-0 end-0"></div>
+        <div class="banner-img position-absolute bg-cover bg-attachment-fixed"></div>
+        <div class="bg-white bg-opacity-50 shadow-sm rounded-3 p-2 position-absolute top-50 start-50 translate-middle text-center text-secondary">
+            <div class="border border-secondary border-2 rounded-3 p-4">
+                <h1 class="display-3 fw-semibold">HsienYaYa</h1>
+                <hr class="mx-n3 mb-1">
+                <h4>Hexschool Assignments</h4>
+                <p>六角學院的課程作業</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 這裡是關於我 -->
+    <div class="p-4 container">
+        <div class="row gy-3 justify-content-center flex-md-row-reverse">
+            <div class="col-md-4">
+                <img class="w-100 object-fit-cover" height="400" src="https://images.unsplash.com/photo-1677665248653-a5365ef7b58c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="關於我">
+            </div>
+            <div class="col-md-5 d-flex align-items-center text-secondary">
+                <div>
+                    <h2 class="display-3">關於我</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit eius nihil quisquam necessitatibus nobis numquam hic quae.</p>
+                    <p>Adipisicing elit. Voluptatum impedit eius nihil quisquam necessitatibus nobis numquam hic quae a, natus illo ullam possimus saepe asperiores iste, minus iure incidunt praesentium.</p>
+                    <a class="btn btn-outline-primary mt-5 w-100" href="＃">閱讀更多...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 這裡是三欄式卡片 -->
+    <div class="bg-light p-4 m-md-5">
+        <div class="container">
+            <h2 class="display-3 text-center mb-3 text-secondary">我的課程作品</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border border-0  text-white">
+                        <img class="card-img  object-fit-cover" src="https://images.unsplash.com/photo-1543652437-15ae836b33e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60" height="400px" alt="名片">
+                        <!-- top-auto，到variables裡，在position，新增auto:auto才有作用-->
+                        <div class="card-img-overlay top-auto bg-dark-gradient">
+                            <h5 class="card-title">網頁名片</h5>
+                            <p class="card-text fw-lighter">製作名片時需要遵循上述規範，以確保您的名片在商業場合得到充分的使用和展示。</p>
+                            <a class="btn btn-outline-primary stretched-link w-100" href="#">看作品</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 text-white">
+                        <img class="card-img object-fit-cover" src="https://images.unsplash.com/photo-1531347520814-e80b3cbe3cba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60" height="400px" alt="名片">
+                        <div class="card-img-overlay top-auto bg-dark-gradient">
+                            <h5 class="card-title">響應式網站</h5>
+                            <p class="card-text fw-lighter">響應式網頁設計(Responsive Web Design)簡稱RWD，又稱回應式網頁設計。</p>
+                            <a class="btn btn-outline-primary stretched-link w-100" href="#">看作品</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border border-0 text-white">
+                        <img class="card-img object-fit-cover" src="https://images.unsplash.com/photo-1531347334762-59780ece5c76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1968&q=80" height="400px" alt="名片">
+                        <div class="card-img-overlay top-auto bg-dark-gradient">
+                            <h5 class="card-title">Bootstrap網頁</h5>
+                            <p class="card-text fw-lighter">使用全球最流行的前端開發工具 Bootstrap，快速設計及自定義響應式網站。</p>
+                            <a class="btn btn-outline-primary stretched-link w-100" href="#">看作品</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 這裡是footer -->
+    <footer class="bg-primary p-4 mt-5">
+        <div class="container text-white">
+            <h2 class="display-3 text-center mb-5 text-white">聯絡資訊</h2>
+            <div class="row justify-content-center flex-md-row-reverse">
+                <div class="col-md-5">
+                    <!-- 這裡是表單 -->
+                    <form class="row g-3 needs-validation mb-3" novalidate>
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name *</label>
+                            <!-- 在variables裡$input-placeholder-color修改顏色 -->
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="輸入姓氏" required>
+                            <div class="valid-feedback">
+                            good!
+                            </div>
+                            <div class="invalid-feedback">
+                            尚未輸入姓氏
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Last name *</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="輸入名字" required>
+                            <div class="valid-feedback">
+                            good!
+                            </div>
+                            <div class="invalid-feedback">
+                            尚未輸入名字
+                            </div>
+                        </div> 
+                        <div class="col-12">
+                            <label for="exampleFormControlInput1" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                            <div class="valid-feedback">
+                            good!
+                            </div>
+                            <div class="invalid-feedback">
+                            請輸入Email
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="exampleFormControlTextarea1" class="form-label">留下您的訊息：</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                            <div class="valid-feedback">
+                            good!
+                            </div>
+                            <div class="invalid-feedback">
+                            如果無訊息，請輸入無。
+                            </div>
+                        </div>
+                        <div class="text-end col-12">
+                            <button type="submit" class="btn btn-outline-light">送出表單</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 這裡是聯絡資訊 -->
+                <div class="col-md-4">
+                    <div>
+                        <!-- 要在variables的＄theme-colors加入primary2 -->
+                        <h4 class="text-primary2">聯絡方式</h4>
+                        <!-- 在components的utilities裡加入link-white -->
+                        <!-- list-unstyled是去掉li前面的點點 -->
+                        <ul class="list-unstyled link-white mb-5">
+                            <li><a class="" href="mailto:xoxoxox@gmail.com"><i class="bi bi-envelope-fill me-1"></i>xoxoxox@gmail.com</a></li>
+                            <li><a class="" href="tel:+886-000000000"><i class="bi bi-telephone-fill me-1"></i>0900-123456</a></li>
+                        </ul>
+                        <h4 class="text-primary2">社群關注</h4>
+                        <ul class="list-unstyled link-white mb-5">
+                            <li><a class="" href="https://www.instagram.com"><i class="bi bi-instagram me-1"></i>Instagram</a></li>
+                            <li><a class="" href="https://zh-tw.facebook.com/"><i class="bi bi-facebook me-1"></i>Facebook</a></li>
+                            <li><a class="" href="https://twitter.com/"><i class="bi bi-twitter me-1"></i>Twitter</a></li>
+                        </ul>
+                        <p>©2023 by YaYa. created with Bootstrap5.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.deco-box1{
+    height: 240px;
+    width: 240px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background-color: #f1d9dd;
+}
+.deco-box2{
+    height: 240px;
+    width: 240px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: $primary;
+}
